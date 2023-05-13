@@ -1,0 +1,179 @@
+@charset "UTF-8";
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+main#container {
+    margin: auto;
+    width: 100vw;
+    margin-top: 8em;
+}
+
+section.sobre-nos {
+    display: grid;
+    margin: auto;
+    width: 100vw;
+    min-height: 27em;
+    background-color: var(--warning);
+    align-content: space-evenly;
+    justify-items: start;
+    justify-content: center;
+}
+
+.sobre-nos h1 {
+    text-transform: capitalize;
+    font-size: 2.4em;
+    color: var(--white);
+}
+
+.sobre-nos p {
+    display: inline-block;
+    width: 39vw;
+    color: var(--gray-dark);
+    line-height: 1.3em;
+}
+
+.sobre-nos>button {
+    padding: 12px;
+    background-color: #000000;
+    color: var(--white);
+    border: 0px;
+    border-radius: 3px;
+}
+
+#container>div {
+    position: absolute;
+    top: 414px;
+    left: 76vw;
+}
+
+article {
+    background-color: var(--white);
+    margin: auto;
+    margin-top: 10em;
+    width: 100vw;
+    height: 32em;
+    display: grid;
+    align-content: space-evenly;
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+article>h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-family: var(--font-family-sans-serif);
+    font-size: 2em;
+}
+
+p.externo {
+    text-align: center;
+}
+
+ol {
+    display: flex;
+    width: 75vw;
+    height: 18em;
+    justify-items: start;
+    transform: translate(52px, 0px);
+    align-items: baseline;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+ol li {
+    text-align: center;
+    list-style: none;
+}
+
+ol h2 {
+    position: relative;
+    right: -3em;
+    font-size: 18px;
+    top: 11px;
+}
+
+.one-h {
+    position: relative;
+    left: 4vw;
+    font-size: 18px;
+    top: 12px;
+}
+
+p.rotulo-1 {
+    position: relative;
+    top: 5em;
+    /* left: -4em; */
+    text-align: start;
+}
+
+p.rotulo-2 {
+    position: relative;
+    top: 5em;
+    /* left: -78px; */
+    text-align: start;
+}
+
+p.rotulo-3 {
+    position: relative;
+    top: 5em;
+    /* left: -2em; */
+    text-align: start;
+}
+
+p.rotulo-4 {
+    position: relative;
+    top: 5em;
+    /* left: -2em; */
+    text-align: start;
+}
+
+button.mais-conteudo-1 {
+    position: absolute;
+    transform: translate(-9vw, 19em);
+    padding: 10px;
+    background-color: var(--yellow);
+    border: 0px;
+    border-radius: 3px;
+    color: var(--white);
+}
+
+button.mais-conteudo-2 {
+    position: absolute;
+    transform: translate(-8vw, 19em);
+    padding: 10px;
+    background-color: var(--yellow);
+    border: 0px;
+    border-radius: 3px;
+    color: var(--white);
+}
+
+button.mais-conteudo-3 {
+    position: absolute;
+    transform: translate(-6vw, 19em);
+    padding: 10px;
+    background-color: var(--yellow);
+    border: 0px;
+    border-radius: 3px;
+    color: var(--white);
+}
+
+button.mais-conteudo-4 {
+    position: absolute;
+    transform: translate(-7vw, 19em);
+    padding: 10px;
+    background-color: var(--yellow);
+    border: 0px;
+    width: 85px;
+    height: 35px;
+    border-radius: 3px;
+    color: var(--white);
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
