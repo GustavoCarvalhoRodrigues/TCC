@@ -6,12 +6,14 @@
 }
 
 main#container {
+    /* Todo conteúdo */
     margin: auto;
     width: 100vw;
     margin-top: 8em;
 }
 
 section.sobre-nos {
+    /* Conteúdo resumo */
     display: grid;
     margin: auto;
     width: 100vw;
@@ -36,11 +38,11 @@ section.sobre-nos {
 }
 
 .sobre-nos>button {
-    padding: 12px;
     background-color: #000000;
     color: var(--white);
     border: 0px;
     border-radius: 3px;
+    padding: 12px;
 }
 
 #container>div {
@@ -50,16 +52,17 @@ section.sobre-nos {
 }
 
 article {
+    /* Seção serviços */
     background-color: var(--white);
     margin: auto;
     margin-top: 10em;
     width: 100vw;
     height: 32em;
     display: grid;
-    align-content: space-evenly;
     justify-items: center;
     justify-content: space-around;
     align-items: center;
+    align-content: space-evenly;
 }
 
 article>h1 {
@@ -74,29 +77,36 @@ p.externo {
 }
 
 ol {
+    /* lista de Serviços */
     display: flex;
-    width: 75vw;
+    max-width: 78vw;
     height: 18em;
     justify-items: start;
-    transform: translate(52px, 0px);
+    transform: translate(-76px, 20px);
     align-items: baseline;
-    justify-content: space-between;
     flex-direction: row;
+}
+
+ol li>img {
+    position: relative;
+    left: 4vw;
 }
 
 ol li {
     text-align: center;
     list-style: none;
+    transform: translate(116px, 10px);
 }
 
 ol h2 {
     position: relative;
     right: -3em;
     font-size: 18px;
-    top: 11px;
+    top: 10px;
 }
 
 .one-h {
+    /* Título 1 serviço */
     position: relative;
     left: 4vw;
     font-size: 18px;
@@ -106,71 +116,260 @@ ol h2 {
 p.rotulo-1 {
     position: relative;
     top: 5em;
-    /* left: -4em; */
     text-align: start;
 }
 
 p.rotulo-2 {
     position: relative;
     top: 5em;
-    /* left: -78px; */
     text-align: start;
 }
 
 p.rotulo-3 {
     position: relative;
     top: 5em;
-    /* left: -2em; */
     text-align: start;
 }
 
 p.rotulo-4 {
     position: relative;
     top: 5em;
-    /* left: -2em; */
     text-align: start;
 }
 
 button.mais-conteudo-1 {
-    position: absolute;
-    transform: translate(-9vw, 19em);
-    padding: 10px;
     background-color: var(--yellow);
+    color: var(--white);
     border: 0px;
     border-radius: 3px;
-    color: var(--white);
+    width: 85px;
+    transform: translate(-6vw, 19em);
+    position: absolute;
+    padding: 10px;
 }
 
 button.mais-conteudo-2 {
-    position: absolute;
-    transform: translate(-8vw, 19em);
-    padding: 10px;
     background-color: var(--yellow);
+    color: var(--white);
     border: 0px;
     border-radius: 3px;
-    color: var(--white);
+    position: absolute;
+    width: 85px;
+    transform: translate(-5vw, 19em);
+    padding: 10px;
 }
 
 button.mais-conteudo-3 {
-    position: absolute;
-    transform: translate(-6vw, 19em);
-    padding: 10px;
     background-color: var(--yellow);
+    color: var(--white);
     border: 0px;
     border-radius: 3px;
-    color: var(--white);
+    position: absolute;
+    width: 85px;
+    transform: translate(-6vw, 19em);
+    padding: 10px;
 }
 
 button.mais-conteudo-4 {
-    position: absolute;
-    transform: translate(-7vw, 19em);
-    padding: 10px;
     background-color: var(--yellow);
+    color: var(--white);
     border: 0px;
+    border-radius: 3px;
+    transform: translate(-7vw, 19em);
+    position: absolute;
+    padding: 10px;
     width: 85px;
     height: 35px;
-    border-radius: 3px;
-    color: var(--white);
+}
+
+aside {
+    width: 100vw;
+    height: 100em;
+    background-color: var(--white);
+    margin: auto;
+    padding-top: 15em;
+}
+
+aside span {
+    position: absolute;
+    left: -5em;
+    transform: translate(46vw, -10px);
+    font-family: var(--font-family-monospace);
+    text-transform: capitalize;
+    font-size: 1.4em;
+}
+
+aside p {
+    padding-top: 60px;
+    text-align: center;
+}
+
+.processos {
+    max-width: 80vw;
+    display: grid;
+    justify-items: end;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.redes-de-contato {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.processos img {
+    max-width: 320px;
+}
+
+.redes-de-contato>li>h2 {
+    position: absolute;
+    right: -11em;
+    top: 29px;
+    font-size: 22px;
+}
+
+.texto-1 {
+    margin: 0px 19px 0px 81px;
+    text-align: left;
+}
+
+.redes-de-contato>li>h5 {
+    position: absolute;
+    top: 15em;
+    left: -61vw;
+    font-size: 15px;
+}
+
+.redes-de-contato li>a img {
+    position: relative;
+    top: 15em;
+    left: -61vw;
+    margin: 5px;
+}
+
+.redes-de-contato-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.redes-de-contato-2 .p2 {
+    position: absolute;
+    top: -15vw;
+    right: -45vw;
+    font-size: 22px;
+}
+
+.texto-2 {
+    margin: 0px 386px 0px 53px;
+    text-align: right;
+    position: relative;
+    top: -17vw;
+    left: 4vw;
+}
+
+.redes-de-contato-2 li>h5 {
+    position: absolute;
+    top: -1em;
+    left: -12vw;
+    font-size: 15px;
+}
+
+.redes-de-contato-2>li>a img {
+    position: relative;
+    top: 0em;
+    left: -12vw;
+    margin: 5px;
+}
+
+.i3 {
+    position: relative;
+    top: -12em;
+    left: -47vw;
+}
+
+.redes-de-contato-3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.redes-de-contato-3 .p3 {
+    position: absolute;
+    top: -30vw;
+    right: -40vw;
+    font-size: 22px;
+}
+
+.texto-3 {
+    margin: 0px 386px 0px 53px;
+    text-align: left;
+    position: relative;
+    left: 26vw;
+    top: -32vw;
+}
+
+.redes-de-contato-3 li>h5 {
+    position: absolute;
+    top: -14em;
+    left: -59vw;
+    font-size: 15px;
+}
+
+.redes-de-contato-3>li>a img {
+    position: relative;
+    top: -194px;
+    left: -59vw;
+    margin: 5px;
+}
+
+.i4 {
+    position: relative;
+    top: -28vw;
+}
+
+.redes-de-contato-4 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.redes-de-contato-4 .p4 {
+    position: absolute;
+    top: -42vw;
+    right: -45vw;
+    font-size: 22px;
+}
+
+.texto-4 {
+    margin: 0px 386px 0px 53px;
+    text-align: right;
+    position: relative;
+    top: -44vw;
+    left: 4vw;
+}
+
+.redes-de-contato-4 li>h5 {
+    position: absolute;
+    top: -29vw;
+    left: -12vw;
+    font-size: 15px;
+}
+
+.redes-de-contato-4>li>a img {
+    position: relative;
+    top: -28vw;
+    left: -12vw;
+    margin: 5px;
+}
+
+p.texto-1,
+.texto-2,
+.texto-3,
+.texto-4 {
+    line-height: 1.6em;
 }
 
 ::-webkit-scrollbar {

@@ -26,10 +26,11 @@ span.logo {
 }
 
 ul {
+    list-style: none;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
-    list-style: none;
 }
 
 ul li {
