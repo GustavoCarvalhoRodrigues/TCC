@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+body,
+html {
+    background-color: var(--white);
+}
+
 main#container {
     /* Todo conteúdo */
     margin: auto;
