@@ -14,8 +14,8 @@ header {
 }
 
 nav#nav-bar {
-    background-color: var(--white);
     min-width: 56vw;
+    background-image: linear-gradient(3deg, beige, white);
 }
 
 span.logo {
