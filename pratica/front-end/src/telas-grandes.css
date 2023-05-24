@@ -506,7 +506,7 @@ html {
         text-align: center;
         color: var(--light);
         font-size: 2em;
-        padding-top: 20px;
+        padding-top: 50px;
     }
 
     .blog h4 {
@@ -520,10 +520,10 @@ html {
         margin: 5px;
         color: var(--light);
         line-height: 1.4em;
-        max-width: 85vw;
+        max-width: 82vw;
         position: relative;
         top: -58px;
-        left: 72px;
+        left: 98px;
     }
 
     .blog>aside>button.button-blog>a {
