@@ -488,16 +488,12 @@ html {
         position: relative;
         top: 2230px;
         margin: auto;
-        background-image: url('../imagens/pexels-designecologist-1999463.jpg');
-        background-position: center center;
-        background-repeat: round;
-        background-size: contain;
         max-width: 100vw;
         padding: 10em;
     }
 
     .blog aside {
-       background-color: #ffc107e0;
+       background-color: #ffc107;
        position: absolute;
        top: 0vw;
        height: 20em;
