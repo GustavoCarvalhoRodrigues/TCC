@@ -64,7 +64,7 @@ html {
     article {
         background-color: var(--white);
         margin: auto;
-        margin-top: 10em;
+        margin-top: 0em;
         width: 100vw;
         height: 32em;
         display: grid;
@@ -195,7 +195,7 @@ html {
         background-color: var(--white);
         margin: auto;
         position: absolute;
-        top: 98em;
+        top: 72em;
     }
 
     aside h1 {
@@ -389,7 +389,7 @@ html {
         width: 70vw;
         margin: auto;
         background-color: var(--white);
-        transform: translate(0px, 125em);
+        transform: translate(0px, 110em);
     }
 
     .user h1 {
@@ -438,12 +438,12 @@ html {
     /* Seção de jogadores e equipes */
     .players-team {
         position: relative;
-        top: 130em;
+        top: 110em;
         margin: auto;
-        max-width: 49vw;
+        max-width: 50vw;
     }
 
-    .players-team img {
+    .players-team a>img {
         width: 360px;
     }
 
@@ -459,47 +459,53 @@ html {
     div.time-1,
     div.time-2 {
         display: inline-block;
-        width: 28vw;
-        height: 60vh;
-        padding-top: 7vw;
+        max-width: 366px;
+        max-height: 421px;
+        margin-top: 6em;
     }
 
     div.time-1 {
         transform: translate(-2em, 0px);
+        border-style: solid;
+        border-color: var(--yellow);
     }
 
     div.time-2 {
         position: absolute;
+        border-style: solid;
+        border-color: var(--yellow);
     }
 
     .time-1 h2,
     .time-2 h2 {
         padding: 20px 0px 10px 0px;
+        text-align: center;
     }
 
     .time-1 p,
     .time-2 p {
         margin: 5px;
+        line-height: 1.3em;
     }
 
     /* Seção Blog */
     section.blog {
         display: block;
         position: relative;
-        top: 2230px;
+        top: 1944px;
         margin: auto;
         max-width: 100vw;
         padding: 10em;
     }
 
     .blog aside {
-       background-color: #ffc107;
-       position: absolute;
-       top: 0vw;
-       height: 20em;
-       width: 100vw;
-       margin: auto;
-       transform: translate(-162px, 0px);
+        background-color: #ffc107;
+        position: absolute;
+        top: 0vw;
+        height: 20em;
+        width: 100vw;
+        margin: auto;
+        transform: translate(-162px, 0px);
     }
 
     .blog h1 {
