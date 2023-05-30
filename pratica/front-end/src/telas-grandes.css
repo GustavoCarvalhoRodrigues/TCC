@@ -23,27 +23,32 @@ html {
 
     /* Seção sobre-nós */
     section.sobre-nos {
-        display: grid;
+        display: flex;
         margin: auto;
         width: 100vw;
         min-height: 27em;
         background-color: var(--warning);
-        align-content: space-evenly;
+        align-content: flex-start;
         justify-items: start;
-        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
     }
 
     .sobre-nos h1 {
         text-transform: capitalize;
         font-size: 2.4em;
         color: var(--white);
+        transform: translate(5em, 0px);
     }
 
     .sobre-nos p {
         display: inline-block;
-        width: 39vw;
+        max-width: 43vw;
         color: var(--gray-dark);
-        line-height: 1.3em;
+        line-height: 1.8em;
+        transform: translate(13em, 0px);
     }
 
     .sobre-nos>button {
@@ -56,8 +61,12 @@ html {
 
     #container>div {
         position: absolute;
-        top: 414px;
-        left: 76vw;
+        top: 125px;
+        left: 62vw;
+    }
+
+    #container>div img {
+        max-width: 330px;
     }
 
     /* Nossos Serviços */
@@ -72,6 +81,10 @@ html {
         justify-content: space-around;
         align-items: center;
         align-content: space-evenly;
+    }
+
+    article img {
+        max-width: 50px;
     }
 
     article>h1 {
@@ -125,7 +138,7 @@ html {
         border: 0px;
         border-radius: 3px;
         width: 85px;
-        transform: translate(-6vw, 19em);
+        transform: translate(-12vw, 20em);
         position: absolute;
         padding: 10px;
     }
@@ -150,7 +163,7 @@ html {
         border-radius: 3px;
         position: absolute;
         width: 85px;
-        transform: translate(-5vw, 19em);
+        transform: translate(-11vw, 20em);
         padding: 10px;
     }
 
@@ -167,7 +180,7 @@ html {
         border-radius: 3px;
         position: absolute;
         width: 85px;
-        transform: translate(-6vw, 19em);
+        transform: translate(-12vw, 20em);
         padding: 10px;
     }
 
@@ -182,7 +195,7 @@ html {
         color: var(--white);
         border: 0px;
         border-radius: 3px;
-        transform: translate(-7vw, 19em);
+        transform: translate(-12vw, 20em);
         position: absolute;
         padding: 10px;
         width: 85px;
@@ -231,7 +244,7 @@ html {
     .busca-2 img,
     .busca-3 img,
     .busca-4 img {
-        max-width: 360px;
+        max-width: 330px;
     }
 
     .busca-1 img {
@@ -254,23 +267,6 @@ html {
         right: -15vw;
     }
 
-    .busca-1 ul {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        position: absolute;
-        top: 26em;
-    }
-
-    .busca-1 ul>li>a img {
-        width: 22px;
-        left: -26vw;
-        top: -3px;
-        border-radius: 11px;
-        position: relative;
-    }
-
     .busca-2 img {
         transform: translate(37vw, -74px);
     }
@@ -290,22 +286,6 @@ html {
         left: -34vw;
     }
 
-    .busca-2 ul {
-        display: flex;
-        position: absolute;
-        top: 1111px;
-        left: 7vw;
-        width: 35vw;
-        flex-direction: row;
-    }
-
-    .busca-2 ul>li>a img {
-        width: 22px;
-        position: relative;
-        top: -16em;
-        border-radius: 11px;
-    }
-
     .busca-3 img {
         transform: translate(2vw, -181px);
     }
@@ -323,23 +303,6 @@ html {
         position: relative;
         top: 0vw;
         right: -8vw;
-    }
-
-    .busca-3 ul {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        position: absolute;
-        top: 73em;
-    }
-
-    .busca-3 ul>li>a img {
-        width: 22px;
-        right: 26vw;
-        top: 8em;
-        border-radius: 11px;
-        position: relative;
     }
 
     .busca-4 {
@@ -365,23 +328,6 @@ html {
         width: 41vw;
         top: 0vw;
         right: 49vw;
-    }
-
-    .busca-4 ul {
-        display: flex;
-        position: absolute;
-        top: 1433px;
-        left: 45vw;
-        width: 35vw;
-        flex-direction: row;
-    }
-
-    .busca-4>ul>li>a img {
-        width: 22px;
-        position: relative;
-        top: 305px;
-        right: 4vw;
-        border-radius: 11px;
     }
 
     /* Seção de acesso dos usúarios */
@@ -486,6 +432,7 @@ html {
     .time-2 p {
         margin: 5px;
         line-height: 1.3em;
+        padding-left: 6px;
     }
 
     /* Seção Blog */
