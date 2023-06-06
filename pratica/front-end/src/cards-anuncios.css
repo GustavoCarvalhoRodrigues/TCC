@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width:1200px) {
+    form {
+        margin: auto;
+        width: 100vw;
+        margin-top: 10px;
+    }
+
+    label img {
+        position: relative;
+        top: 22px;
+        left: 60vw;
+        width: 14px;
+    }
+
+    input {
+        display: block;
+        margin: auto;
+        width: 25vw;
+        padding: 2px;
+        border-top-style: inset;
+    }
+
+    #card-1 {
+        max-width: 32em;
+        min-height: 523px;
+        background-color: #6c757d38;
+        margin: auto;
+        margin-top: 20px;
+        box-shadow: -3px 2px 7px #343a406b;
+    }
+
+    #card-1 img.imagem-principal {
+        width: 513px;
+        height: 320px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+
+    .status {
+        background-color: var(--light);
+        padding: 17px;
+        transform: translate(0px, -3px);
+    }
+
+    .status>span img {
+        width: 14px;
+        transform: translate(-4px, 0px);
+    }
+
+    p.extra {
+        font-size: 1.1em;
+    }
+
+    .status span.user {
+        display: inline-block;
+        margin: 10px 0px 10px 5px;
+    }
+
+    .status span.date {
+        margin-left: 10px;
+    }
+
+    img.alarme {
+        width: 16px;
+        display: inline-block;
+        position: relative;
+        left: 133px;
+        top: 24px;
+    }
+
+    img.pizza {
+        width: 16px;
+        position: absolute;
+        left: 55vw;
+        top: 540px;
+    }
+
+    p.min {
+        transform: translate(116px, 24px);
+        font-size: 14px;
+    }
+
+    p.por {
+        font-size: 14px;
+        position: relative;
+        left: 304px;
+        top: 8px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}

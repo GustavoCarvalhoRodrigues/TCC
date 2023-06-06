@@ -16,7 +16,8 @@ header {
 
 nav#nav-bar {
     min-width: 56vw;
-    background-image: linear-gradient(3deg, beige, white);
+    box-shadow: 0px -1px 3px var(--dark);
+    background-image: linear-gradient(1deg, beige, white);
 }
 
 span.logo {

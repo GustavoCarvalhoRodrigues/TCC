@@ -435,6 +435,10 @@ html {
         padding-left: 6px;
     }
 
+    .players-team a:active {
+        transition-delay: 3.5ms;
+    }
+
     /* Seção Blog */
     section.blog {
         display: block;
