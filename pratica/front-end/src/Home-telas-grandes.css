@@ -73,14 +73,9 @@ html {
     article {
         background-color: var(--white);
         margin: auto;
-        margin-top: 0em;
-        width: 100vw;
+        margin-top: 5em;
+        width: 75vw;
         height: 32em;
-        display: grid;
-        justify-items: center;
-        justify-content: space-around;
-        align-items: center;
-        align-content: space-evenly;
     }
 
     article img {
@@ -96,40 +91,63 @@ html {
 
     p.externo {
         text-align: center;
+        position: relative;
+        top: 2vw;
     }
 
     ol {
         display: flex;
-        max-width: 78vw;
-        height: 18em;
-        justify-items: start;
-        transform: translate(-141px, 20px);
+        max-width: 75vw;
+        margin-top: 6em;
+        flex-wrap: nowrap;
         align-items: baseline;
-        flex-direction: row;
     }
 
     ol li {
         text-align: center;
         list-style: none;
-        transform: translate(116px, 10px);
     }
+
+    ol>li img.imagem-1 {
+        
+transform: translate(125px, 10px);
+    }
+
 
     ol li>img {
-        position: relative;
-        left: 4vw;
+        transform: translate(31px, 10px);
     }
 
-    .one-h {
+    ol h2.t-1 {
         position: relative;
-        left: 4vw;
+        left: 7em;
         font-size: 18px;
-        top: 12px;
+        top: 18px;
+    }
+
+    ol h2 {
+        position: relative;
+        left: 2em;
+        font-size: 18px;
+        top: 18px;
     }
 
     p.rotulo-1 {
         position: relative;
         top: 5em;
-        text-align: start;
+        left: 12px;
+        text-align: left;
+        margin: 0px -50px 0px -4px;
+        line-height: 1.4em;
+    }
+
+    p.rotulo {
+        position: relative;
+        top: 5em;
+        left: -70px;
+        text-align: left;
+        margin: 0px -50px 0px -4px;
+        line-height: 1.4em;
     }
 
     button.mais-conteudo-1 {
@@ -138,23 +156,11 @@ html {
         border: 0px;
         border-radius: 3px;
         width: 85px;
-        transform: translate(-12vw, 20em);
-        position: absolute;
+        transform: translate(-9vw, 302px);
         padding: 10px;
     }
 
-    ol h2 {
-        position: relative;
-        right: -3em;
-        font-size: 18px;
-        top: 10px;
-    }
-
-    p.rotulo-2 {
-        position: relative;
-        top: 5em;
-        text-align: start;
-    }
+    
 
     button.mais-conteudo-2 {
         background-color: var(--yellow);
@@ -163,14 +169,8 @@ html {
         border-radius: 3px;
         position: absolute;
         width: 85px;
-        transform: translate(-11vw, 20em);
+        transform: translate(-14vw, 21em);
         padding: 10px;
-    }
-
-    p.rotulo-3 {
-        position: relative;
-        top: 5em;
-        text-align: start;
     }
 
     button.mais-conteudo-3 {
@@ -180,14 +180,8 @@ html {
         border-radius: 3px;
         position: absolute;
         width: 85px;
-        transform: translate(-12vw, 20em);
+        transform: translate(-15vw, 21em);
         padding: 10px;
-    }
-
-    p.rotulo-4 {
-        position: relative;
-        top: 5em;
-        text-align: start;
     }
 
     button.mais-conteudo-4 {
@@ -195,7 +189,7 @@ html {
         color: var(--white);
         border: 0px;
         border-radius: 3px;
-        transform: translate(-12vw, 20em);
+        transform: translate(-15vw, 21em);
         position: absolute;
         padding: 10px;
         width: 85px;
@@ -268,22 +262,22 @@ html {
     }
 
     .busca-2 img {
-        transform: translate(37vw, -74px);
+        transform: translate(40vw, -74px);
     }
 
     .busca-2 h2 {
         position: relative;
         top: -10em;
-        left: 15vw;
+        left: 17vw;
     }
 
     .busca-2 p {
         text-align: right;
-        transform: translate(31vw, -277px);
-        width: 45vw;
+        transform: translate(51vw, -275px);
         position: relative;
+        width: 41vw;
         top: 0vw;
-        left: -34vw;
+        right: 51vw;
     }
 
     .busca-3 img {
@@ -386,7 +380,7 @@ html {
         position: relative;
         top: 110em;
         margin: auto;
-        max-width: 50vw;
+        max-width: 51vw;
     }
 
     .players-team a>img {
@@ -405,21 +399,24 @@ html {
     div.time-1,
     div.time-2 {
         display: inline-block;
-        max-width: 366px;
+        max-width: 370px;
         max-height: 421px;
-        margin-top: 6em;
     }
 
     div.time-1 {
-        transform: translate(-2em, 0px);
+        margin: auto;
+        margin-top: 6em;
         border-style: solid;
         border-color: var(--yellow);
     }
 
     div.time-2 {
         position: absolute;
+        top: 181px;
+        left: 24em;
         border-style: solid;
         border-color: var(--yellow);
+        margin: auto;
     }
 
     .time-1 h2,
