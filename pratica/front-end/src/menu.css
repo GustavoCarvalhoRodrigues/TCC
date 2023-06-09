@@ -29,26 +29,59 @@ span.logo {
 
 ul {
     list-style: none;
+    background: var(--light);
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: center;
+    margin-top: -15px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 ul li {
-    margin: 0px 2px 14px 26px;
+    display: flex;
+    /* position: relative; */
+    align-items: center;
+    flex-direction: column;
 }
 
-ul li.enter {
-    position: absolute;
-    left: 89vw;
+ul li a {
+    display: block;
+    padding: 20px 15px;
+    color: #FFF;
+    text-decoration: none;
+    height: 62px;
+    font-size: 18px;
 }
+
+ul li ul.dropdown li {
+    display: block;
+    
+}
+
+ul li ul.dropdown {
+    /* width: 90%; */
+    background: var(--gray-dark);
+    top: 79px;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+ul li a:hover {
+    background: var(--white);
+    /* height: 50px; */
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
 
 #nav-bar a {
     font-family: var(--font-family-monospace);
-    color: var(--gray-dark);
+    color: var(--gray);
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 ::-webkit-scrollbar {
