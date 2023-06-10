@@ -39,7 +39,6 @@ ul {
 
 ul li {
     display: flex;
-    /* position: relative; */
     align-items: center;
     flex-direction: column;
 }
@@ -59,7 +58,6 @@ ul li ul.dropdown li {
 }
 
 ul li ul.dropdown {
-    /* width: 90%; */
     background: var(--gray-dark);
     top: 79px;
     position: absolute;
